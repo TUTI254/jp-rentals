@@ -34,3 +34,6 @@ Python
 - then run `pip install -r requirements.txt` to install all neccessary dependancies
 - 
 - start server : `streamlit run app.py`
+
+
+also note you need to have a Mysql db for this to work and tweak it to fit your project
