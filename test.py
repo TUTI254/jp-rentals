@@ -3,7 +3,7 @@ from langchain_google_genai import GoogleGenerativeAI
 from langchain_community.utilities import sql_database
 from langchain_experimental.sql import SQLDatabaseChain
 
-api_key='AIzaSyBOBlORAcFeHtJsuZ3-7KRCO19OQva2xn0'
+api_key='your key'
 
 llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key=api_key,temperature=0.1)
 db_user = "root"
