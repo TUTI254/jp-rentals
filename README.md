@@ -37,3 +37,7 @@ Python
 
 
 also note you need to have a Mysql db for this to work and tweak it to fit your project
+
+demo
+![image](https://github.com/TUTI254/jp-rentals/assets/75304270/ce0e3d0d-7ea5-4865-97dc-3649ad3aa717)
+
