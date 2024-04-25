@@ -25,7 +25,7 @@ def get_few_shot_db_chain():
     # connecting db to project
     db= sql_database.SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
 
-    embeddings = huggingface.HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
+    embeddings = huggingface.HuggingFaceEmbeddings(model_name='obrizum/all-MiniLM-L6-v2')
     to_vectorize = [" ".join(example.values()) for example in few_shots]
     vectorstore = chroma.Chroma.from_texts(to_vectorize,embeddings,metadatas=few_shots)
     example_selector = SemanticSimilarityExampleSelector(
